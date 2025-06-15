@@ -26,14 +26,7 @@ Before responding to any prompt in the syncit_app project, you MUST:
 5. Use the context from the user's prompt + git state to determine what specific action to take
 6. Provide modular, incremental code updates as specified in the rules
 
-## Pre-Prompt Context Requirements
 
-Before ANY response, gather workspace context:
-```bash
-git status --porcelain
-git diff --name-only HEAD~1
-git log --oneline -3
-```
 
 ## Quick Navigation
 

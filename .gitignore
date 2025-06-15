@@ -49,6 +49,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+syncit_env/
+syncit-env/
 
 # IDEs
 .vscode/
