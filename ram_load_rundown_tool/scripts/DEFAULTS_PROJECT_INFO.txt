@@ -1,0 +1,40 @@
+[INPUTS]
+files = 
+typical = 
+filepaths = 
+root_directory = 
+start_from_level_or_index = 0
+end_at_level_or_index = -1
+
+[SETTINGS]
+reinforced_concrete_density = 24.0
+drawing_scale_1_to = 100.0
+atempt_restart_if_error = True
+max_attempts_if_errors_raised = 5
+exit_code_after_x_seconds = 10
+generate_mesh = True
+debug = False
+max_column_stiffness_ratio = 0.8
+min_column_stiffness_ratio = 0.0
+
+[LOADINGS NAMES]
+transfer_dead = Transfer - Dead
+transfer_ll_reducible = Transfer - LL reducible
+transfer_ll_unreducible = Transfer - LL unreducible
+ll_unreducible = Transfer - LL unreducible
+llr_plans = Live (Reducible) Loading,Live (Parking) Loading,Live (Roof) Loading
+llur_plans = Live (Unreducible) Loading,Live (Storage) Loading
+
+[LOAD COMBINATION NAMES]
+all_dead_lc = All Dead LC
+
+[EQ COMBO FACTORS]
+eq_factors_dl = 1.0
+eq_factors_llr = 0.3
+eq_factors_llur = 0.6
+
+[RUN CALCS]
+do_load_rundown = True
+do_centroid_calcs = False
+update_column_stifness_calcs = False
+
